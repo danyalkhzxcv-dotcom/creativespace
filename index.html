@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A creative portfolio showcasing web design, development, and creative projects.">
+    <title>CreativeSpace | My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <a href="#home" class="logo">Creative<span>Space.</span></a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle"
+                aria-label="Switch color theme" title="Switch theme">
+            🌙
+        </button>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="eyebrow">WELCOME TO MY CREATIVE WORLD</p>
+
+                <h1>Ideas become <span>beautiful</span> experiences.</h1>
+
+                <p class="hero-description">
+                    Hello! I'm a creative learner passionate about web design,
+                    technology, and building useful digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        Explore My Work →
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div>
+                        <strong>03+</strong>
+                        <span>Sample Projects</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Creative Energy</span>
+                    </div>
+                    <div>
+                        <strong>∞</strong>
+                        <span>Ideas to Explore</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-art" aria-label="Creative workspace illustration">
+                <div class="art-circle"></div>
+                <div class="art-card card-one">
+                    <span class="art-icon">💻</span>
+                    <h3>Web Design</h3>
+                    <p>Creative digital ideas</p>
+                </div>
+                <div class="art-card card-two">
+                    <span class="art-icon">🎨</span>
+                    <h3>Creativity</h3>
+                    <p>Design with purpose</p>
+                </div>
+                <div class="floating-star">✦</div>
+                <div class="floating-dot"></div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section about-section" id="about">
+            <div class="section-heading">
+                <p class="eyebrow">GET TO KNOW ME</p>
+                <h2>A little about <span>my journey.</span></h2>
+                <p>
+                    Learning, experimenting, and turning simple ideas
+                    into meaningful digital experiences.
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-icon">🚀</div>
+                <div class="about-content">
+                    <h3>Curious mind. Creative approach.</h3>
+                    <p>
+                        I enjoy exploring technology and discovering how websites
+                        can solve everyday problems. My goal is to build websites
+                        that are attractive, accessible, responsive, and easy to use.
+                    </p>
+                    <p>
+                        Every project gives me a chance to learn something new,
+                        improve my skills, and bring another idea to life.
+                    </p>
+                    <a href="#contact" class="text-link">Let's connect →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">MY CREATIVE WORK</p>
+                <h2>Projects worth <span>exploring.</span></h2>
+                <p>
+                    A collection of sample ideas created with design,
+                    usability, and creativity in mind.
+                </p>
+            </div>
+
+            <div class="filter-buttons" aria-label="Filter projects">
+                <button class="filter-btn active" data-filter="all"
+                        aria-pressed="true">All Projects</button>
+                <button class="filter-btn" data-filter="design"
+                        aria-pressed="false">Design</button>
+                <button class="filter-btn" data-filter="development"
+                        aria-pressed="false">Development</button>
+            </div>
+
+            <div class="project-grid" id="projectGrid">
+
+                <article class="project-card" data-category="design">
+                    <div class="project-image image-purple">
+                        <span>🎨</span>
+                        <small>DESIGN CONCEPT</small>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>Creative Brand Identity</h3>
+                        <p>
+                            A visual concept for a modern brand with a
+                            clean and memorable style.
+                        </p>
+                        <button class="project-link" data-project="brand">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="development">
+                    <div class="project-image image-blue">
+                        <span>💻</span>
+                        <small>WEB CONCEPT</small>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Development</span>
+                        <h3>Responsive Website</h3>
+                        <p>
+                            A responsive website concept designed to work
+                            across phones, tablets, and computers.
+                        </p>
+                        <button class="project-link" data-project="website">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="design">
+                    <div class="project-image image-orange">
+                        <span>📱</span>
+                        <small>UI CONCEPT</small>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Design</span>
+                        <h3>Mobile App Interface</h3>
+                        <p>
+                            A simple interface concept focused on
+                            clarity and user-friendly navigation.
+                        </p>
+                        <button class="project-link" data-project="mobile">
+                            View Details →
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-projects" id="noProjects" hidden>
+                No projects found in this category.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="section-heading">
+                <p class="eyebrow">GET IN TOUCH</p>
+                <h2>Have an idea? <span>Let's talk.</span></h2>
+                <p>
+                    Have a question, suggestion, or project idea?
+                    Send a message using the form below.
+                </p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your name"
+                               minlength="2" maxlength="80" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="you@example.com"
+                               maxlength="120" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject"
+                           placeholder="What would you like to discuss?"
+                           maxlength="120" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Write your message here..."
+                              minlength="5" maxlength="2000" required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary submit-btn">
+                    Send Message →
+                </button>
+
+                <p class="form-status" id="formStatus"
+                   role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <a href="#home" class="logo">Creative<span>Space.</span></a>
+        <p>Designed with curiosity and built with creativity.</p>
+        <p class="copyright">
+            © <span id="currentYear"></span> CreativeSpace. All rights reserved.
+        </p>
+        <a href="#home" class="back-top">Back to top ↑</a>
+    </footer>
+
+    <!-- Project Details Dialog -->
+    <dialog class="project-dialog" id="projectDialog"
+            aria-labelledby="dialogTitle">
+        <button class="dialog-close" id="dialogClose"
+                aria-label="Close project details">×</button>
+        <p class="eyebrow">PROJECT DETAILS</p>
+        <h2 id="dialogTitle">Project title</h2>
+        <p id="dialogDescription"></p>
+        <button class="btn btn-primary" id="dialogOk">Got it</button>
+    </dialog>
+
+</body>
+</html>
